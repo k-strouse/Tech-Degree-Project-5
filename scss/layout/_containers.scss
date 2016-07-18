@@ -1,0 +1,67 @@
+.container {
+	padding-left: 1em;
+	padding-right: 1em;
+	background-color: $background;
+	@include tablet {
+		text-align: center;
+   		padding: 16px;
+	}
+	@include desktop {
+		text-align: center;
+   		padding: 16px;
+	}
+}
+
+.wrapper {
+	@extend %centered;
+}
+
+.contact-wrapper {
+	background-color: $background;
+	padding-bottom: 10px;
+	@extend %centered;
+	@include tablet {
+		clear: left;
+    	padding-top: 20px;
+	}
+	@include desktop {
+		clear: both;
+    	padding-top: 20px;
+	}
+}
+
+.gallery {
+	li {
+		@include tablet {
+			float: left;
+    		width: 45%;
+    		margin: 2.5%;
+		}
+		@include desktop {
+			float: left;
+    		width: 33.33%;
+    		margin: 0;
+		}
+		&:nth-child(3) {
+			@include tablet {
+				clear: left;
+			}
+		}
+		&:nth-child(4) {
+			@include desktop {
+				clear: left;
+			}
+		}
+	p {
+		@include tablet {
+			margin: 0;
+    		padding: 5%;
+    		font-size: 1em;
+		}
+		@include desktop {
+    		padding: 0 50px 50px 20px;
+		}
+		}
+	}
+
+}

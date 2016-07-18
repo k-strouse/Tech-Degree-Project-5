@@ -1,0 +1,93 @@
+footer {
+	background-color: $background;
+	@extend %border-top;
+}
+
+.footer-name {
+	@include mobile {
+    	@include floats(block, left);
+    }
+    @include tablet {
+    	float: left;
+    	vertical-align: top;
+    	margin-left: 20px;
+    }
+    @include desktop {
+      float: left;
+      vertical-align: top;
+      margin-left: 20px;
+    }    
+}
+
+.footer-mobile-nav {
+	@include mobile {
+		@include floats(block, right);
+    }
+    @include tablet {
+    	display: none;
+    }
+    @include desktop {
+      display: none;
+    }    
+}
+
+.footer-nav {
+	@include mobile {
+    	display: none;
+    }
+    @include tablet {
+      display: block;
+      float:right;
+      margin-right: 20px;
+    }
+    @include desktop {
+      display: block;
+      float:right;
+      margin-right: 20px;
+    }    
+    li {
+    	@include tablet {
+    		float: left;
+   			margin-left: 15px;
+    		vertical-align: top;	
+    	}
+      @include desktop {
+        float: left;
+        margin-left: 15px;
+        vertical-align: top;        
+      }
+    }
+}
+
+.clearfix {
+   @extend %clearfix;
+}
+
+.contact-info {
+  a {
+  font-weight: bold;
+  }
+  a,
+  p {
+  display: inline;
+  padding: 10px;
+  }
+}
+
+.contact-text {
+  @include desktop {
+    margin: 20px 300px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+

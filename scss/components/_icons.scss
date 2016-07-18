@@ -1,0 +1,26 @@
+.me {
+	@include mobile {
+		width: 40%;
+	}
+	@include tablet {
+		width: 20%;
+    	float: right;
+    	margin-left: 15px;
+	}
+	@include desktop {
+		width: 20%;
+    	float: right;
+    	margin-left: 15px;
+	}
+	
+	border-radius: 50%;
+	display: block;
+  	width: 70%;
+  	@extend %zero_margin;
+}
+
+.portfolio-img {
+	display: block;
+	width: 90%;
+	@extend %zero_margin;
+}

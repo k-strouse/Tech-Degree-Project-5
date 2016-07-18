@@ -1,0 +1,55 @@
+/*  Base Styles--------------------*/
+
+* {
+	box-sizing: border-box;
+}
+
+ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+a {
+  	text-decoration: none;
+	color: $hyperlink;
+}
+
+body {
+  margin: 10px;
+  padding: 0;
+  font-family: $open-sans;
+  color: $hyperlink;
+}
+
+  .contact-text  {
+  	@include tablet {
+		margin: 20px 50px;
+	}
+}
+
+
+
+/*  Psuedo Classes--------------------*/
+
+a {
+	&:link {
+		color: $hyperlink;
+		text-decoration: none;
+	}
+	&:hover {
+		color: $hover;
+		border-bottom-color: $hover;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+

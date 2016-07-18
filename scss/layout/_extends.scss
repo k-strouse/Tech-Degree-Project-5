@@ -1,0 +1,38 @@
+//Center Text
+
+%centered {
+	text-align: center;
+}
+
+// Nav Anchor
+
+%nav_a {
+	display: block;
+  	font-size: 1.25em;
+  	font-weight: 400;
+  	text-align: center;
+  	padding: .4em;
+  	border-bottom: 1px solid $border-bottom;
+}
+
+// Margin 0-Auto
+
+%zero_margin {
+	margin: 0 auto;
+}
+
+// Clearfix
+
+%clearfix {
+	&::after {
+		content: '';
+		display: table;
+		clear: both;
+	}
+}
+
+//Borders
+
+%border-top {
+	border-top: 2.5px solid $border-top;
+}

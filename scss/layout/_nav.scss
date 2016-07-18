@@ -1,0 +1,67 @@
+.main-header {
+	p {
+	  @extend %centered;
+	  @include tablet {
+	  		text-align: left;
+    		font-size: 1.15em;
+   			margin-top: 0;
+	  }
+	  @include desktop {
+	  		text-align: left;
+    		font-size: 1.15em;
+   			margin-top: 0;
+	  }
+	}
+	padding-top: 1em;
+}
+
+.name {
+	@extend %centered;
+	@include tablet {
+		display: block;
+		margin-bottom: 0;
+		font-size: 2em;
+	}
+	@include desktop {
+		float: left;
+    	vertical-align: top;
+	}
+}
+
+
+.nav {
+	a {
+		@extend %nav_a;
+		@include mobile {
+			display: block;
+		}
+	}
+	li {
+		margin-left: 15px;
+		vertical-align: top;
+		@include tablet {
+			float: left;
+    		padding: 20px; 			
+		}
+		@include desktop {
+			float: left;
+    		margin-left: 15px;
+    		vertical-align: top;
+		}
+	}
+	@include tablet {
+		display: inline-block;
+    	margin: 0 auto;
+    	font-size: 1.35em;
+	}
+	@include desktop {
+		display: inline-block;
+    	margin: 0 auto;
+    	font-size: 1.35em;
+	}	
+	margin-top: 1.5em;
+	padding-left: 0;
+	@include desktop {
+		float:right;
+	}
+}
