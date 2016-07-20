@@ -3,12 +3,12 @@
 	  @extend %centered;
 	  @include tablet {
 	  		text-align: left;
-    		font-size: 1.15em;
+    		font-size: $p-text-tablet;
    			margin-top: 0;
 	  }
 	  @include desktop {
 	  		text-align: left;
-    		font-size: 1.15em;
+    		font-size: $p-text-tablet;
    			margin-top: 0;
 	  }
 	}
@@ -20,7 +20,7 @@
 	@include tablet {
 		display: block;
 		margin-bottom: 0;
-		font-size: 2em;
+		font-size: $header-text;
 	}
 	@include desktop {
 		float: left;
@@ -52,12 +52,12 @@
 	@include tablet {
 		display: inline-block;
     	margin: 0 auto;
-    	font-size: 1.35em;
+    	font-size: $li-text;
 	}
 	@include desktop {
 		display: inline-block;
     	margin: 0 auto;
-    	font-size: 1.35em;
+    	font-size: $li-text;
 	}	
 	margin-top: 1.5em;
 	padding-left: 0;
